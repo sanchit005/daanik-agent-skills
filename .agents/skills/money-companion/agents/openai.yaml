@@ -1,0 +1,6 @@
+interface:
+  display_name: "Everyday Money Companion"
+  short_description: "Organise budgets, bills and savings in plain language."
+  default_prompt: "Use $money-companion to help me organise my monthly money."
+policy:
+  allow_implicit_invocation: true
