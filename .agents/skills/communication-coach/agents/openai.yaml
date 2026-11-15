@@ -1,0 +1,6 @@
+interface:
+  display_name: "Everyday Communication Coach"
+  short_description: "Draft clear messages and prepare for conversations."
+  default_prompt: "Use $communication-coach to help me write this message clearly."
+policy:
+  allow_implicit_invocation: true
