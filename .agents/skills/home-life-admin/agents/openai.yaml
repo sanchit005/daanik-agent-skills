@@ -1,0 +1,6 @@
+interface:
+  display_name: "Home & Life Admin Organizer"
+  short_description: "Organise household tasks, lists and routine admin."
+  default_prompt: "Use $home-life-admin to organise this household task."
+policy:
+  allow_implicit_invocation: true
