@@ -1,0 +1,6 @@
+interface:
+  display_name: "Everyday Learning Coach"
+  short_description: "Learn topics with examples, practice and feedback."
+  default_prompt: "Use $learning-coach to teach me this topic step by step."
+policy:
+  allow_implicit_invocation: true
