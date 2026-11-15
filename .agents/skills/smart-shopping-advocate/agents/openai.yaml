@@ -1,0 +1,6 @@
+interface:
+  display_name: "Smart Shopping Advocate"
+  short_description: "Compare purchases and recognise sales pressure."
+  default_prompt: "Use $smart-shopping-advocate to help me evaluate this purchase."
+policy:
+  allow_implicit_invocation: true
