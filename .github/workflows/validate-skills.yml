@@ -1,0 +1,26 @@
+name: Validate Daanik Agent Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Skills
+        run: python scripts/validate_skills.py
+      - name: Build platform ZIP bundles
+        run: python scripts/package_skills.py --platform all
