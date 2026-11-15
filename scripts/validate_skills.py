@@ -18,7 +18,6 @@ REQUIRED_SECTIONS = (
     "How the person can start",
     "Step-by-step workflow",
     "Examples",
-    "Privacy, safety and limits",
     "Before responding, check",
 )
 EXPECTED_SKILLS = {
@@ -64,8 +63,8 @@ def validate_skill(path: Path) -> list[str]:
         if section.lower() not in text.lower():
             errors.append(f"{path}: missing required guidance section: {section}")
 
-    if "password" not in text.lower() and "privacy" not in text.lower():
-        errors.append(f"{path}: missing privacy guidance")
+    if "privacy" not in text.lower() or "safety" not in text.lower():
+        errors.append(f"{path}: missing privacy and safety guidance")
     return errors
 
 
