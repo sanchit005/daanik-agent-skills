@@ -87,6 +87,19 @@ NLP-inspired practices are limited to transparent communication techniques such 
 
 Read [Behavioural Design & Ethics](docs/BEHAVIOURAL_DESIGN_AND_ETHICS.md).
 
+## Quality checks and evaluation
+
+The repository includes 32 human-readable test scenarios (four per Skill), a five-dimension scoring rubric and a structural validation script.
+
+```bash
+python scripts/validate_skills.py
+python scripts/package_skills.py --platform all
+```
+
+The GitHub Actions workflow validates the Skill structure and builds platform ZIP bundles on pushes and pull requests. Model-quality evaluation still requires testing on the target AI host; a passing structural check is not proof that every model will always behave correctly.
+
+See [Evaluation Guide](evaluations/README.md), [Test Cases](evaluations/TEST_CASES.md), [Release Process](docs/RELEASE_PROCESS.md), [Copyright and Brand Notes](docs/COPYRIGHT_AND_BRAND.md) and [Changelog](CHANGELOG.md).
+
 ## Safety and important limits
 
 - The Money Companion provides general education and budgeting organisation—not personalised investment, securities, tax, insurance, lending or legal advice.
