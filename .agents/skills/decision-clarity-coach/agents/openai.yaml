@@ -1,0 +1,6 @@
+interface:
+  display_name: "Decision Clarity Coach"
+  short_description: "Compare choices, trade-offs and decision risks."
+  default_prompt: "Use $decision-clarity-coach to help me compare these options."
+policy:
+  allow_implicit_invocation: true
