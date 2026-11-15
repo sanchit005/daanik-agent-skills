@@ -24,3 +24,10 @@ jobs:
         run: python scripts/validate_skills.py
       - name: Build platform ZIP bundles
         run: python scripts/package_skills.py --platform all
+      - name: Upload platform packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: daanik-everyday-ai-skills-v0.1.0
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
