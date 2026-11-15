@@ -1,0 +1,6 @@
+interface:
+  display_name: "Digital Safety & Scam Checker"
+  short_description: "Check suspicious messages and plan safe next steps."
+  default_prompt: "Use $digital-safety-checker to assess this suspicious message safely."
+policy:
+  allow_implicit_invocation: true
